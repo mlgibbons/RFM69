@@ -31,6 +31,7 @@
 
 void setup () {
 #ifdef WITH_RFM69
+  radio.initialize(RF69_868MHZ, 2, 100);
   radio.sleep();
 #endif
 
